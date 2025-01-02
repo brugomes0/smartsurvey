@@ -8,6 +8,7 @@
 	import { requestToApi, requestTokens } from "./helpers/api"
 	import { Route, Router } from "svelte-routing"
 	import { Toaster } from "svelte-french-toast"
+	import Categories from "./components/Categories.svelte"
 	import Header from "./components/Header.svelte"
 	import LL, { setLocale } from "./i18n/i18n-svelte"
 	import NotFound from "./components/NotFound.svelte"
@@ -122,6 +123,7 @@
 					<Header bind:sidebar bind:user />
 					<div class="flex flex-col flex-1 items-center w-full">
 						<div class="flex flex-col flex-1 items-center max-w-[1400px] w-full p-[10px] lg:p-5">
+							<Route path="/categories" component={Categories} {user} />
 							<Route path="/permissions" component={Permissions} {user} />
 							<Route component={NotFound} />
 						</div>

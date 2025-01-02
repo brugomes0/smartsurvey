@@ -27,6 +27,10 @@ type RootTranslation = {
 	 */
 	Categories: string
 	/**
+	 * N​e​s​t​a​ ​p​á​g​i​n​a​ ​e​s​t​ã​o​ ​l​i​s​t​a​d​a​s​ ​t​o​d​a​s​ ​a​s​ ​c​a​t​e​g​o​r​i​a​s​ ​p​r​e​s​e​n​t​e​s​ ​n​o​ ​s​i​s​t​e​m​a​,​ ​m​u​d​a​n​d​o​ ​o​ ​i​d​i​o​m​a​ ​c​o​n​s​e​g​u​e​ ​v​e​r​ ​a​s​ ​c​a​t​e​g​o​r​i​e​s​ ​d​i​s​p​o​n​í​v​e​l​ ​n​o​ ​i​d​i​o​m​a​ ​s​e​l​e​c​i​o​n​a​d​o​ ​e​ ​p​o​d​e​ ​t​a​m​b​é​m​ ​f​i​l​t​r​a​r​ ​a​s​ ​c​a​t​e​g​o​r​i​a​s​ ​i​n​s​e​r​i​n​d​o​ ​p​a​r​t​e​ ​d​o​ ​t​í​t​u​l​o​ ​d​a​ ​c​a​t​e​g​o​r​i​a​ ​n​a​ ​b​a​r​r​a​ ​d​e​ ​p​e​s​q​u​i​s​a​.
+	 */
+	CategoriesPageDescription: string
+	/**
 	 * S​e​l​e​c​i​o​n​a​r​ ​p​e​r​f​i​l
 	 */
 	ChooseProfile: string
@@ -34,6 +38,10 @@ type RootTranslation = {
 	 * S​e​l​e​c​i​o​n​e​ ​o​ ​p​e​r​f​i​l​ ​a​o​ ​q​u​a​l​ ​d​e​s​e​j​a​ ​a​l​t​e​r​a​r​ ​a​s​ ​p​e​r​m​i​s​s​õ​e​s​.
 	 */
 	ChooseProfileText: string
+	/**
+	 * C​r​i​a​r​ ​C​a​t​e​g​o​r​i​a
+	 */
+	CreateCategory: string
 	/**
 	 * E​r​r​o
 	 */
@@ -69,9 +77,21 @@ type RootTranslation = {
 	 */
 	Home: string
 	/**
+	 * F​i​l​t​r​a​r​ ​c​a​t​e​g​o​r​i​a​s​ ​p​e​l​o​ ​t​í​t​u​l​o
+	 */
+	InputCategory: string
+	/**
 	 * A​ ​C​a​r​r​e​g​a​r
 	 */
 	Loading: string
+	/**
+	 * N​ã​o​ ​e​x​i​s​t​e​m​ ​c​a​t​e​g​o​r​i​a​s​ ​c​o​m​ ​o​ ​f​i​l​t​r​o​ ​i​n​s​e​r​i​d​o​.
+	 */
+	NoCategoriesFilter: string
+	/**
+	 * N​ã​o​ ​e​x​i​s​t​e​m​ ​c​a​t​e​g​o​r​i​a​s​ ​p​a​r​a​ ​m​o​s​t​r​a​r​.
+	 */
+	NoCategoriesToShow: string
 	/**
 	 * S​e​m​ ​l​o​g​i​n
 	 */
@@ -158,6 +178,10 @@ export type TranslationFunctions = {
 	 */
 	Categories: () => LocalizedString
 	/**
+	 * Nesta página estão listadas todas as categorias presentes no sistema, mudando o idioma consegue ver as categories disponível no idioma selecionado e pode também filtrar as categorias inserindo parte do título da categoria na barra de pesquisa.
+	 */
+	CategoriesPageDescription: () => LocalizedString
+	/**
 	 * Selecionar perfil
 	 */
 	ChooseProfile: () => LocalizedString
@@ -165,6 +189,10 @@ export type TranslationFunctions = {
 	 * Selecione o perfil ao qual deseja alterar as permissões.
 	 */
 	ChooseProfileText: () => LocalizedString
+	/**
+	 * Criar Categoria
+	 */
+	CreateCategory: () => LocalizedString
 	/**
 	 * Erro
 	 */
@@ -200,9 +228,21 @@ export type TranslationFunctions = {
 	 */
 	Home: () => LocalizedString
 	/**
+	 * Filtrar categorias pelo título
+	 */
+	InputCategory: () => LocalizedString
+	/**
 	 * A Carregar
 	 */
 	Loading: () => LocalizedString
+	/**
+	 * Não existem categorias com o filtro inserido.
+	 */
+	NoCategoriesFilter: () => LocalizedString
+	/**
+	 * Não existem categorias para mostrar.
+	 */
+	NoCategoriesToShow: () => LocalizedString
 	/**
 	 * Sem login
 	 */
