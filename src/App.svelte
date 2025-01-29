@@ -8,14 +8,22 @@
 	import { requestToApi, requestTokens } from "./helpers/api"
 	import { Route, Router } from "svelte-routing"
 	import { Toaster } from "svelte-french-toast"
-	import Categories from "./components/Categories.svelte"
-	import Header from "./components/Header.svelte"
 	import LL, { setLocale } from "./i18n/i18n-svelte"
+	import type { Locales } from "./i18n/i18n-types"
+
+	// IMPORT COMPONENTS
+	import Categories from "./components/Categories.svelte"
+	import Category from "./components/Category.svelte"
+	import CreateCategory from "./components/CreateCategory.svelte"
+	import EditCategory from "./components/EditCategory.svelte"
+	import Header from "./components/Header.svelte"
+	import HomeBackoffice from "./components/HomeBackoffice.svelte"
 	import NotFound from "./components/NotFound.svelte"
 	import Permissions from "./components/Permissions.svelte"
+	import RatingGroups from "./components/RatingGroups.svelte"
 	import Sidebar from "./components/Sidebar.svelte"
 	import Tailwind from "./components/Tailwind.svelte"
-	import type { Locales } from "./i18n/i18n-types"
+    import CreateRatingGroup from "./components/CreateRatingGroup.svelte"
 
 	export let authToken: string
 	export let baseUrl: string
@@ -45,11 +53,13 @@
 			setLocale(locale as Locales)
 		} else {
 			console.log(`Locale not found. Falling back to ${baseLocale}`)
+			lang = baseLocale.toUpperCase()
 			setLocale(baseLocale)
 		}
 	}
 
 	onMount(async () => {
+		// update store of apiUrl with export variable
 		API_URL.update((temp: any) => temp = baseUrl)
 
 		if (authToken) {
@@ -58,17 +68,10 @@
 			deleteCookie("ss_rt")
 			let response = await requestTokens(authToken)
 			if (response.statusCode === 200) {
-				token.accessToken = response.data.token
-				token.refreshToken = response.data.refreshToken
-				setCookie("ss_at", token.accessToken)
-				setCookie("ss_rt", token.refreshToken)
+				let responseUser = await requestToApi("GET", "Users/Me")
+				if (responseUser.statusCode === 200) user = responseUser.data
 			}
 		} else {
-			token.accessToken = getCookie("ss_at") ?? ""
-			token.refreshToken = getCookie("ss_rt") ?? ""
-		}
-
-		if (token.accessToken !== "" && token.refreshToken !== "") {
 			let responseUser = await requestToApi("GET", "Users/Me")
 			if (responseUser.statusCode === 200) user = responseUser.data
 		}
@@ -123,7 +126,13 @@
 					<Header bind:sidebar bind:user />
 					<div class="flex flex-col flex-1 items-center w-full">
 						<div class="flex flex-col flex-1 items-center max-w-[1400px] w-full p-[10px] lg:p-5">
-							<Route path="/categories" component={Categories} {user} />
+							<Route path="/" component={HomeBackoffice} />
+							<Route path="/categories" component={Categories} {lang} {user} />
+							<Route path="/categories/createCategory" component={CreateCategory} />
+							<Route path="/categories/:categoryId" component={Category} {lang} {user} />
+							<Route path="/categories/:categoryId/edit" component={EditCategory} />
+							<Route path="/ratingGroups" component={RatingGroups} {lang} {user} />
+							<Route path="/ratingGroups/createRatingGroup" component={CreateRatingGroup} />
 							<Route path="/permissions" component={Permissions} {user} />
 							<Route component={NotFound} />
 						</div>

@@ -1,5 +1,34 @@
 import LL from "../i18n/i18n-svelte"
 
+export function getLanguageText(lang: string): string {
+    let text: string = ""
+    let subscription = LL.subscribe(ll => {
+        switch(lang) {
+            case "PT":
+                text = ll.Language.PT()
+                break
+            case "EN":
+                text = ll.Language.EN()
+                break
+            case "ES":
+                text = ll.Language.ES()
+                break
+            case "FR":
+                text = ll.Language.FR()
+                break
+            case "PL":
+                text = ll.Language.PL()
+                break
+            default:
+                text = "Not supposed to be here"
+                break
+        }
+    })
+
+    subscription()
+    return text
+}
+
 export function getText(name: string): string {
     let text: string = ""
     let subscription = LL.subscribe(ll => {
@@ -48,4 +77,8 @@ export function getText(name: string): string {
 
     subscription()
     return text
+}
+
+export function isCheckboxChecked(langs: string[], lang: string): boolean {
+    return langs.includes(lang)
 }
