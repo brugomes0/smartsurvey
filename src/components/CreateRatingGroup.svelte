@@ -112,8 +112,6 @@
             languagesChoosen = languagesChoosen.filter(temp => temp !== language)
         }
     }
-
-    $: console.log(ratingGroup)
 </script>
 
 <div class="flex flex-col gap-y-5 w-full">
@@ -193,7 +191,7 @@
                 </div>
             {/if}
             <div class="flex flex-col">
-                <span class="font-semibold text-base text-black">{$LL.RatingOptions()}</span>
+                <span class="font-semibold text-base text-black">{$LL.CreateRatingOptions()}</span>
                 <span class="text-xs text-gray-400">{$LL.RatingOptionsText()}</span>
             </div>
             <div class="border flex flex-col gap-y-3 p-3 rounded bg-gray-100 border-gray-300">

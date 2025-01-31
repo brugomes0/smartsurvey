@@ -118,6 +118,10 @@ type RootTranslation = {
 	 */
 	CreateRatingGroupDescription: string
 	/**
+	 * C​r​i​a​r​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
+	 */
+	CreateRatingOptions: string
+	/**
 	 * C​r​i​a​d​a​ ​p​o​r
 	 */
 	CreatedBy: string
@@ -190,6 +194,10 @@ type RootTranslation = {
 	 */
 	DeleteRatingGroupSaved: string
 	/**
+	 * E​s​t​a​ ​a​ç​ã​o​ ​i​r​á​ ​r​e​m​o​v​e​r​ ​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​ ​d​e​ ​f​o​r​m​a​ ​p​e​r​m​a​n​e​n​t​e​.​ ​V​e​r​i​f​i​q​u​e​ ​s​e​ ​d​e​s​e​j​a​ ​m​e​s​m​o​ ​r​e​m​o​v​e​r​ ​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​.
+	 */
+	DeleteRatingGroupText: string
+	/**
 	 * R​e​m​o​v​e​r​ ​o​p​ç​ã​o​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
 	 */
 	DeleteRatingOption: string
@@ -229,6 +237,18 @@ type RootTranslation = {
 	 * P​a​s​s​o​ ​p​a​r​a​ ​e​d​i​t​a​r​ ​q​u​e​s​t​õ​e​s​ ​d​e​ ​t​e​x​t​o​ ​p​a​r​a​ ​a​ ​c​a​t​e​g​o​r​i​a​ ​q​u​e​ ​e​s​t​á​ ​a​ ​s​e​r​ ​e​d​i​t​a​d​a​.​ ​P​o​d​e​ ​s​a​l​t​a​r​ ​e​s​t​e​ ​p​a​s​s​o​ ​c​a​s​o​ ​q​u​e​i​r​a​ ​s​a​l​t​a​r​ ​a​ ​e​d​i​ç​ã​o​ ​d​a​s​ ​q​u​e​s​t​õ​e​s​ ​d​e​ ​t​e​x​t​o​.
 	 */
 	EditQuestionsOfTextText: string
+	/**
+	 * E​d​i​t​a​r​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o
+	 */
+	EditRatingGroup: string
+	/**
+	 * T​e​m​ ​a​ ​c​e​r​t​e​z​a​ ​q​u​e​ ​p​r​e​t​e​n​d​e​ ​e​d​i​t​a​r​ ​e​s​t​e​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​?
+	 */
+	EditRatingGroupAlertText: string
+	/**
+	 * E​s​t​a​ ​a​ç​ã​o​ ​i​r​á​ ​p​e​r​m​i​t​i​-​l​o​ ​e​d​i​t​a​r​ ​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​.​ ​P​o​d​e​r​á​ ​a​l​t​e​r​a​r​ ​o​ ​t​í​t​u​l​o​,​ ​d​e​s​c​r​i​ç​ã​o​ ​e​ ​a​s​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o​.
+	 */
+	EditRatingGroupText: string
 	/**
 	 * E​r​r​o​ ​a​o​ ​t​e​n​t​a​r​ ​e​d​i​t​a​r​ ​a​ ​c​a​t​e​g​o​r​i​a​.
 	 */
@@ -463,6 +483,10 @@ type RootTranslation = {
 	 */
 	RatingGroupDescriptionText: string
 	/**
+	 * D​e​t​a​l​h​e​s​ ​d​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o
+	 */
+	RatingGroupDetails: string
+	/**
 	 * T​í​t​u​l​o​ ​d​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o
 	 */
 	RatingGroupTitle: string
@@ -487,7 +511,7 @@ type RootTranslation = {
 	 */
 	RatingOptionTitle: string
 	/**
-	 * C​r​i​a​r​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
+	 * O​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
 	 */
 	RatingOptions: string
 	/**
@@ -659,6 +683,10 @@ export type TranslationFunctions = {
 	 */
 	CreateRatingGroupDescription: () => LocalizedString
 	/**
+	 * Criar opções de classificação
+	 */
+	CreateRatingOptions: () => LocalizedString
+	/**
 	 * Criada por
 	 */
 	CreatedBy: () => LocalizedString
@@ -731,6 +759,10 @@ export type TranslationFunctions = {
 	 */
 	DeleteRatingGroupSaved: () => LocalizedString
 	/**
+	 * Esta ação irá remover o critério de avaliação de forma permanente. Verifique se deseja mesmo remover o critério de avaliação.
+	 */
+	DeleteRatingGroupText: () => LocalizedString
+	/**
 	 * Remover opção de classificação
 	 */
 	DeleteRatingOption: () => LocalizedString
@@ -770,6 +802,18 @@ export type TranslationFunctions = {
 	 * Passo para editar questões de texto para a categoria que está a ser editada. Pode saltar este passo caso queira saltar a edição das questões de texto.
 	 */
 	EditQuestionsOfTextText: () => LocalizedString
+	/**
+	 * Editar critério de avaliação
+	 */
+	EditRatingGroup: () => LocalizedString
+	/**
+	 * Tem a certeza que pretende editar este critério de avaliação?
+	 */
+	EditRatingGroupAlertText: () => LocalizedString
+	/**
+	 * Esta ação irá permiti-lo editar o critério de avaliação. Poderá alterar o título, descrição e as opções de classificação.
+	 */
+	EditRatingGroupText: () => LocalizedString
 	/**
 	 * Erro ao tentar editar a categoria.
 	 */
@@ -1001,6 +1045,10 @@ export type TranslationFunctions = {
 	 */
 	RatingGroupDescriptionText: () => LocalizedString
 	/**
+	 * Detalhes do critério de avaliação
+	 */
+	RatingGroupDetails: () => LocalizedString
+	/**
 	 * Título do critério de avaliação
 	 */
 	RatingGroupTitle: () => LocalizedString
@@ -1025,7 +1073,7 @@ export type TranslationFunctions = {
 	 */
 	RatingOptionTitle: () => LocalizedString
 	/**
-	 * Criar opções de classificação
+	 * Opções de classificação
 	 */
 	RatingOptions: () => LocalizedString
 	/**

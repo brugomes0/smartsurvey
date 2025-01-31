@@ -10,7 +10,9 @@
     <div class="flex flex-col gap-y-2 mx-auto p-2 rounded bg-gray-100 w-full h-full md:w-[400px] md:h-auto">
         <slot name="header" />
         <hr>
-        <slot name="content" />
+        <div class="flex-1 md:flex-none">
+            <slot name="content" />
+        </div>
         <hr>
         <div class="flex justify-end">
             <button on:click={confirmChanges} class="font-medium px-1 rounded bg-blue-500 hover:bg-blue-600 text-white">{$LL.Confirm()}</button>

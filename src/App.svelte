@@ -15,15 +15,16 @@
 	import Categories from "./components/Categories.svelte"
 	import Category from "./components/Category.svelte"
 	import CreateCategory from "./components/CreateCategory.svelte"
+	import CreateRatingGroup from "./components/CreateRatingGroup.svelte"
 	import EditCategory from "./components/EditCategory.svelte"
 	import Header from "./components/Header.svelte"
 	import HomeBackoffice from "./components/HomeBackoffice.svelte"
 	import NotFound from "./components/NotFound.svelte"
 	import Permissions from "./components/Permissions.svelte"
+	import RatingGroup from "./components/RatingGroup.svelte"
 	import RatingGroups from "./components/RatingGroups.svelte"
 	import Sidebar from "./components/Sidebar.svelte"
 	import Tailwind from "./components/Tailwind.svelte"
-    import CreateRatingGroup from "./components/CreateRatingGroup.svelte"
 
 	export let authToken: string
 	export let baseUrl: string
@@ -128,10 +129,11 @@
 						<div class="flex flex-col flex-1 items-center max-w-[1400px] w-full p-[10px] lg:p-5">
 							<Route path="/" component={HomeBackoffice} />
 							<Route path="/categories" component={Categories} {lang} {user} />
-							<Route path="/categories/createCategory" component={CreateCategory} />
 							<Route path="/categories/:categoryId" component={Category} {lang} {user} />
 							<Route path="/categories/:categoryId/edit" component={EditCategory} />
+							<Route path="/categories/createCategory" component={CreateCategory} />
 							<Route path="/ratingGroups" component={RatingGroups} {lang} {user} />
+							<Route path="/ratingGroups/:ratingGroupId" component={RatingGroup} {lang} {user} />
 							<Route path="/ratingGroups/createRatingGroup" component={CreateRatingGroup} />
 							<Route path="/permissions" component={Permissions} {user} />
 							<Route component={NotFound} />

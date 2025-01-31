@@ -14,7 +14,7 @@
 
     let buttonDelete: boolean = false
     let buttonEdit: boolean = false
-    let category: any
+    let category: CategoryType
     let languageChoosen: string = lang
     let loading: boolean = true
     let modalDeleteIsOpen: boolean = false

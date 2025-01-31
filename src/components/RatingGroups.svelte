@@ -3,10 +3,10 @@
     import { navigate } from "svelte-routing"
     import { onMount } from "svelte"
     import { requestToApi } from "../helpers/api"
-    import LL from "../i18n/i18n-svelte"
-    import toast from "svelte-french-toast"
     import ComponentRatingGroup from "./helpers/ComponentRatingGroup.svelte"
-    import Modal from "./Modal.svelte";
+    import LL from "../i18n/i18n-svelte"
+    import Modal from "./Modal.svelte"
+    import toast from "svelte-french-toast"
 
     export let lang: string
     export let user: UserType
@@ -38,7 +38,6 @@
 
     async function getRatingGroups() {
         let response = await requestToApi("GET", `SmartSurvey/RatingGroups?page=${page}&pageSize=${size}&name=${input}`)
-        console.log(response)
         if (response.statusCode === 200) {
             ratingGroups = response.data
             total = response.totalCount
