@@ -95,7 +95,7 @@
 {/if}
 
 {#if modalEditIsOpen}
-    <Modal on:save={() => navigate(`/ratingGroup/${ratingGroupId}/edit`)}>
+    <Modal on:save={() => navigate(`/ratingGroups/${ratingGroupId}/edit`)}>
         <div class="flex items-center justify-between" slot="header">
             <span class="font-medium text-base text-gray-800">{$LL.EditRatingGroup()}</span>
             <button on:click={() => exitModal("Edit")} class="p-2 rounded hover:bg-gray-200">

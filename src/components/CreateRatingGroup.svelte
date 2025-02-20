@@ -192,7 +192,7 @@
             {/if}
             <div class="flex flex-col">
                 <span class="font-semibold text-base text-black">{$LL.CreateRatingOptions()}</span>
-                <span class="text-xs text-gray-400">{$LL.RatingOptionsText()}</span>
+                <span class="text-xs text-gray-400">{$LL.CreateRatingOptionsText()}</span>
             </div>
             <div class="border flex flex-col gap-y-3 p-3 rounded bg-gray-100 border-gray-300">
                 {#each ratingGroup.ratingOptions as ratingOption, index}

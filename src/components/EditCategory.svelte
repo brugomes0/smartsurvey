@@ -174,7 +174,7 @@
         {#if page == 0}
             <div class="flex flex-col">
                 <span class="font-semibold text-base text-black">{$LL.LanguageChoiceTitle()}</span>
-                <span class="text-xs text-gray-400">{$LL.LanguageChoiceDescription()}</span>
+                <span class="text-xs text-gray-400">{$LL.LanguageChoiceCategoryDescription()}</span>
                 <div class="flex flex-col mt-2 px-5">
                     {#each languages as lang}
                         <label class="flex gap-x-2 text-sm w-min {category.availableLangs.includes(lang) ? 'cursor-default' : 'cursor-pointer'}">

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { AlertCircleIcon, ChevronLeftIcon, ChevronRightIcon, PlusIcon, SearchIcon, Trash2Icon, XIcon } from "lucide-svelte"
+    import { AlertCircleIcon, ChevronLeftIcon, ChevronRightIcon, CircleXIcon, PlusIcon, SearchIcon, Trash2Icon, XIcon } from "lucide-svelte"
     import { Link, navigate } from "svelte-routing"
     import { onMount } from "svelte"
     import { requestToApi } from "../helpers/api"
@@ -160,8 +160,9 @@
             </div>
         {:else}
             {#if error}
-                <div class="border-2 font-semibold p-2 rounded text-sm bg-red-600 border-red-700 text-white">
-                    <p>{$LL.ErrorType.Categories()}</p>
+                <div class="border-2 flex font-semibold gap-x-2 items-center p-2 rounded text-sm bg-red-600 border-red-700 text-white">
+                    <svelte:component this={CircleXIcon} size={20} />
+                    <span>{$LL.ErrorType.Categories()}</span>
                 </div>
             {:else}
                 {#if categories.length > 0}

@@ -35,6 +35,7 @@
     "sirv-cli": "^2.0.0",
     "svelte-french-toast": "^1.2.0",
     "svelte-steps": "^2.4.1",
+    "svelty-picker": "^5.2.11",
     "typesafe-i18n": "^5.26.2"
   }
 }

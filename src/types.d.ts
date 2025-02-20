@@ -35,6 +35,14 @@ type CreateRatingOptionType = {
     translations: TranslationType[]
 }
 
+type CreateSurveyType = {
+    title: string,
+    description: string,
+    endDate: string | null,
+    template: TemplateType
+    surveyEmployeeIds: number[]
+}
+
 type PermissionType = {
     permissionId: number,
     permissionType: string,
@@ -69,6 +77,37 @@ type RatingOptionType = {
     numericValue: number,
     needComment: boolean,
     translations: TranslationType[]
+}
+
+type SurveysType = {
+    surveyId: string
+    title: string,
+    description: string,
+    availableLangs: string[],
+    status: string,
+    createDate: string
+    startDate?: string | null
+    endDate?: string | null
+    username: string
+}
+
+type TemplateType = {
+    availableLangs: string[],
+    categories: TemplateCategoryType[]
+}
+
+type TemplateCategoryType = {
+    categoryId: string,
+    position: number,
+    value: number,
+    questions: TemplateQuestionType[]
+}
+
+type TemplateQuestionType = {
+    questionId: string,
+    isRequired: boolean,
+    position: number,
+    value: number
 }
 
 type TranslationType = {

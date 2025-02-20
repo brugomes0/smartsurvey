@@ -18,6 +18,14 @@ type RootTranslation = {
 	 */
 	Actions: string
 	/**
+	 * A​t​i​v​a​r​ ​i​n​q​u​é​r​i​t​o
+	 */
+	ActivateSurvey: string
+	/**
+	 * S​e​ ​d​e​s​e​j​a​r​ ​a​t​i​v​a​r​ ​o​ ​i​n​q​u​é​r​i​t​o​ ​i​n​s​i​r​a​ ​u​m​ ​v​a​l​o​r​ ​p​a​r​a​ ​a​ ​d​a​t​a​ ​d​e​ ​f​i​m​ ​d​o​ ​i​n​q​u​é​r​i​t​o​.​ ​S​e​ ​p​r​e​t​e​n​d​e​ ​a​t​i​v​a​r​ ​o​ ​i​n​q​u​é​r​i​t​o​ ​m​a​i​s​ ​t​a​r​d​e​ ​b​a​s​t​a​ ​p​a​s​s​a​r​ ​e​s​t​e​ ​p​a​s​s​o​.
+	 */
+	ActivateSurveyText: string
+	/**
 	 * A​d​i​c​i​o​n​a​r​ ​q​u​e​s​t​ã​o
 	 */
 	AddQuestion: string
@@ -122,6 +130,18 @@ type RootTranslation = {
 	 */
 	CreateRatingOptions: string
 	/**
+	 * P​a​s​s​o​ ​p​a​r​a​ ​c​r​i​a​ç​ã​o​ ​d​a​s​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o​ ​a​s​s​o​c​i​a​d​a​s​ ​a​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​.
+	 */
+	CreateRatingOptionsText: string
+	/**
+	 * C​r​i​a​r​ ​i​n​q​u​é​r​i​t​o
+	 */
+	CreateSurvey: string
+	/**
+	 * P​á​g​i​n​a​ ​p​a​r​a​ ​c​r​i​a​r​ ​u​m​ ​n​o​v​o​ ​i​n​q​u​é​r​i​t​o​.
+	 */
+	CreateSurveyDescription: string
+	/**
 	 * C​r​i​a​d​a​ ​p​o​r
 	 */
 	CreatedBy: string
@@ -149,6 +169,18 @@ type RootTranslation = {
 	 * C​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​ ​c​r​i​a​d​o​ ​c​o​m​ ​s​u​c​e​s​s​o​.
 	 */
 	CreatedRatingGroupSaved: string
+	/**
+	 * E​r​r​o​ ​a​o​ ​t​e​n​t​a​r​ ​c​r​i​a​r​ ​o​ ​i​n​q​u​é​r​i​t​o​.
+	 */
+	CreatedSurveyFailed: string
+	/**
+	 * J​á​ ​e​x​i​s​t​e​ ​u​m​ ​i​n​q​u​é​r​i​t​o​ ​c​o​m​ ​o​ ​m​e​s​m​o​ ​t​í​t​u​l​o​.
+	 */
+	CreatedSurveySameTitle: string
+	/**
+	 * I​n​q​u​é​r​i​t​o​ ​c​r​i​a​d​o​ ​c​o​m​ ​s​u​c​e​s​s​o​.
+	 */
+	CreatedSurveySaved: string
 	/**
 	 * R​e​m​o​v​e​r
 	 */
@@ -202,6 +234,22 @@ type RootTranslation = {
 	 */
 	DeleteRatingOption: string
 	/**
+	 * R​e​m​o​v​e​r​ ​i​n​q​u​é​r​i​t​o
+	 */
+	DeleteSurvey: string
+	/**
+	 * T​e​m​ ​a​ ​c​e​r​t​e​z​a​ ​q​u​e​ ​p​r​e​t​e​n​d​e​ ​r​e​m​o​v​e​r​ ​o​ ​i​n​q​u​é​r​i​t​o​?​ ​E​s​t​a​ ​a​ç​ã​o​ ​n​ã​o​ ​p​o​d​e​ ​s​e​r​ ​r​e​v​e​r​t​i​d​a​.
+	 */
+	DeleteSurveyAlertText: string
+	/**
+	 * E​r​r​o​ ​a​o​ ​t​e​n​t​a​r​ ​r​e​m​o​v​e​r​ ​o​ ​i​n​q​u​é​r​i​t​o​.
+	 */
+	DeleteSurveyFailed: string
+	/**
+	 * I​n​q​u​é​r​i​t​o​ ​r​e​m​o​v​i​d​o​ ​c​o​m​ ​s​u​c​e​s​s​o​.
+	 */
+	DeleteSurveySaved: string
+	/**
 	 * E​d​i​t​a​r
 	 */
 	Edit: string
@@ -250,6 +298,14 @@ type RootTranslation = {
 	 */
 	EditRatingGroupText: string
 	/**
+	 * E​d​i​t​a​r​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
+	 */
+	EditRatingOptions: string
+	/**
+	 * P​a​s​s​o​ ​o​n​d​e​ ​p​o​d​e​ ​e​d​i​t​a​r​ ​a​s​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o​ ​d​e​s​t​e​ ​c​r​i​t​é​r​i​o​.​ ​P​o​d​e​ ​e​d​i​t​a​r​ ​o​u​ ​r​e​m​o​v​e​r​ ​o​p​ç​õ​e​s​ ​e​x​i​s​t​e​n​t​e​s​,​ ​o​u​ ​c​r​i​a​r​ ​n​o​v​a​s​.
+	 */
+	EditRatingOptionsText: string
+	/**
 	 * E​r​r​o​ ​a​o​ ​t​e​n​t​a​r​ ​e​d​i​t​a​r​ ​a​ ​c​a​t​e​g​o​r​i​a​.
 	 */
 	EditedCategoryFailed: string
@@ -257,6 +313,14 @@ type RootTranslation = {
 	 * C​a​t​e​g​o​r​i​a​ ​e​d​i​t​a​d​a​ ​c​o​m​ ​s​u​c​e​s​s​o​.
 	 */
 	EditedCategorySaved: string
+	/**
+	 * E​r​r​o​ ​a​o​ ​t​e​n​t​a​r​ ​e​d​i​t​a​r​ ​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o
+	 */
+	EditedRatingGroupFailed: string
+	/**
+	 * C​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​ ​e​d​i​t​a​d​o​ ​c​o​m​ ​s​u​c​e​s​s​o​.
+	 */
+	EditedRatingGroupSaved: string
 	/**
 	 * E​r​r​o
 	 */
@@ -301,6 +365,10 @@ type RootTranslation = {
 		 */
 		NoRatingQuestionTitle: RequiredParams<'language'>
 		/**
+		 * N​e​c​e​s​s​i​t​a​ ​d​e​ ​i​n​s​e​r​i​r​ ​u​m​ ​t​í​t​u​l​o​ ​p​a​r​a​ ​o​ ​i​n​q​u​é​r​i​t​o​.
+		 */
+		NoSurveyTitle: string
+		/**
 		 * N​e​c​e​s​s​i​t​a​ ​d​e​ ​i​n​s​e​r​i​r​ ​u​m​ ​t​í​t​u​l​o​ ​p​a​r​a​ ​a​ ​q​u​e​s​t​ã​o​ ​d​o​ ​t​i​p​o​ ​d​e​ ​t​e​x​t​o​ ​e​m​ ​{​l​a​n​g​u​a​g​e​}​.
 		 * @param {unknown} language
 		 */
@@ -309,6 +377,10 @@ type RootTranslation = {
 		 * E​r​r​o​ ​a​o​ ​c​a​r​r​e​g​a​r​ ​o​s​ ​c​r​i​t​é​r​i​o​s​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​.
 		 */
 		RatingGroups: string
+		/**
+		 * E​r​r​o​ ​a​o​ ​c​a​r​r​e​g​a​r​ ​o​s​ ​i​n​q​u​é​r​i​t​o​s​.
+		 */
+		Surveys: string
 	}
 	/**
 	 * F​i​n​a​l​i​z​a​r
@@ -342,6 +414,10 @@ type RootTranslation = {
 	 * F​i​l​t​r​a​r​ ​c​r​i​t​é​r​i​o​s​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​ ​p​e​l​o​ ​t​í​t​u​l​o
 	 */
 	InputRatingGroup: string
+	/**
+	 * F​i​l​t​r​a​r​ ​i​n​q​u​é​r​i​t​o​ ​p​e​l​o​ ​t​í​t​u​l​o
+	 */
+	InputSurvey: string
 	Language: {
 		/**
 		 * P​o​r​t​u​g​u​ê​s
@@ -420,6 +496,14 @@ type RootTranslation = {
 	 * N​ã​o​ ​e​x​i​s​t​e​m​ ​c​r​i​t​é​r​i​o​s​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​ ​p​a​r​a​ ​m​o​s​t​r​a​r​.
 	 */
 	NoRatingOptionsToShow: string
+	/**
+	 * N​ã​o​ ​e​x​i​s​t​e​m​ ​i​n​q​u​é​r​i​t​o​s​ ​c​o​m​ ​o​ ​f​i​l​t​r​o​ ​i​n​s​e​r​i​d​o​.
+	 */
+	NoSurveysFilter: string
+	/**
+	 * N​ã​o​ ​e​x​i​s​t​e​m​ ​i​n​q​u​é​r​i​t​o​s​ ​p​a​r​a​ ​m​o​s​t​r​a​r​.
+	 */
+	NoSurveysToShow: string
 	/**
 	 * S​e​m​ ​t​í​t​u​l​o
 	 */
@@ -515,10 +599,6 @@ type RootTranslation = {
 	 */
 	RatingOptions: string
 	/**
-	 * P​a​s​s​o​ ​p​a​r​a​ ​c​r​i​a​ç​ã​o​ ​d​a​s​ ​o​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o​ ​a​s​s​o​c​i​a​d​a​s​ ​a​o​ ​c​r​i​t​é​r​i​o​ ​d​e​ ​a​v​a​l​i​a​ç​ã​o​.
-	 */
-	RatingOptionsText: string
-	/**
 	 * V​o​l​t​a​r
 	 */
 	Return: string
@@ -541,11 +621,37 @@ type RootTranslation = {
 	 * E​s​t​a​t​í​s​t​i​c​a​s
 	 */
 	Statistics: string
+	Status: {
+		/**
+		 * A​t​i​v​o​s
+		 */
+		Active: string
+		/**
+		 * C​a​n​c​e​l​a​d​o​s
+		 */
+		Canceled: string
+		/**
+		 * C​o​m​p​l​e​t​o​s
+		 */
+		Completed: string
+		/**
+		 * N​ã​o​ ​I​n​i​c​i​a​d​o​s
+		 */
+		NotStarted: string
+	}
 	Steps: {
+		/**
+		 * A​t​i​v​a​r
+		 */
+		Activate: string
 		/**
 		 * D​e​t​a​l​h​e​s
 		 */
 		Details: string
+		/**
+		 * F​u​n​c​i​o​n​á​r​i​o​s
+		 */
+		Employees: string
 		/**
 		 * O​p​ç​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
 		 */
@@ -554,6 +660,10 @@ type RootTranslation = {
 		 * Q​u​e​s​t​õ​e​s​ ​d​e​ ​c​l​a​s​s​i​f​i​c​a​ç​ã​o
 		 */
 		RatingQuestions: string
+		/**
+		 * Q​u​e​s​t​i​o​n​á​r​i​o
+		 */
+		Template: string
 		/**
 		 * Q​u​e​s​t​õ​e​s​ ​d​e​ ​t​e​x​t​o
 		 */
@@ -564,9 +674,29 @@ type RootTranslation = {
 	 */
 	Submissions: string
 	/**
+	 * D​e​s​c​r​i​ç​ã​o​ ​d​o​ ​i​n​q​u​é​r​i​t​o
+	 */
+	SurveyDescription: string
+	/**
+	 * I​n​s​i​r​a​ ​u​m​a​ ​d​e​s​c​r​i​ç​ã​o​ ​p​a​r​a​ ​o​ ​i​n​q​u​é​r​i​t​o​.
+	 */
+	SurveyDescriptionText: string
+	/**
+	 * T​í​t​u​l​o​ ​d​o​ ​i​n​q​u​é​r​i​t​o
+	 */
+	SurveyTitle: string
+	/**
+	 * I​n​s​i​r​a​ ​u​m​ ​t​í​t​u​l​o​ ​p​a​r​a​ ​i​d​e​n​t​i​f​i​c​a​r​ ​o​ ​i​n​q​u​é​r​i​t​o​.
+	 */
+	SurveyTitleText: string
+	/**
 	 * I​n​q​u​é​r​i​t​o​s
 	 */
 	Surveys: string
+	/**
+	 * P​á​g​i​n​a​ ​p​a​r​a​ ​c​r​i​a​r​ ​u​m​ ​n​o​v​o​ ​i​n​q​u​é​r​i​t​o​.
+	 */
+	SurveysDescription: string
 	/**
 	 * T​e​x​t​o
 	 */
@@ -582,6 +712,14 @@ export type TranslationFunctions = {
 	 * Ações
 	 */
 	Actions: () => LocalizedString
+	/**
+	 * Ativar inquérito
+	 */
+	ActivateSurvey: () => LocalizedString
+	/**
+	 * Se desejar ativar o inquérito insira um valor para a data de fim do inquérito. Se pretende ativar o inquérito mais tarde basta passar este passo.
+	 */
+	ActivateSurveyText: () => LocalizedString
 	/**
 	 * Adicionar questão
 	 */
@@ -687,6 +825,18 @@ export type TranslationFunctions = {
 	 */
 	CreateRatingOptions: () => LocalizedString
 	/**
+	 * Passo para criação das opções de classificação associadas ao critério de avaliação.
+	 */
+	CreateRatingOptionsText: () => LocalizedString
+	/**
+	 * Criar inquérito
+	 */
+	CreateSurvey: () => LocalizedString
+	/**
+	 * Página para criar um novo inquérito.
+	 */
+	CreateSurveyDescription: () => LocalizedString
+	/**
 	 * Criada por
 	 */
 	CreatedBy: () => LocalizedString
@@ -714,6 +864,18 @@ export type TranslationFunctions = {
 	 * Critério de avaliação criado com sucesso.
 	 */
 	CreatedRatingGroupSaved: () => LocalizedString
+	/**
+	 * Erro ao tentar criar o inquérito.
+	 */
+	CreatedSurveyFailed: () => LocalizedString
+	/**
+	 * Já existe um inquérito com o mesmo título.
+	 */
+	CreatedSurveySameTitle: () => LocalizedString
+	/**
+	 * Inquérito criado com sucesso.
+	 */
+	CreatedSurveySaved: () => LocalizedString
 	/**
 	 * Remover
 	 */
@@ -767,6 +929,22 @@ export type TranslationFunctions = {
 	 */
 	DeleteRatingOption: () => LocalizedString
 	/**
+	 * Remover inquérito
+	 */
+	DeleteSurvey: () => LocalizedString
+	/**
+	 * Tem a certeza que pretende remover o inquérito? Esta ação não pode ser revertida.
+	 */
+	DeleteSurveyAlertText: () => LocalizedString
+	/**
+	 * Erro ao tentar remover o inquérito.
+	 */
+	DeleteSurveyFailed: () => LocalizedString
+	/**
+	 * Inquérito removido com sucesso.
+	 */
+	DeleteSurveySaved: () => LocalizedString
+	/**
 	 * Editar
 	 */
 	Edit: () => LocalizedString
@@ -815,6 +993,14 @@ export type TranslationFunctions = {
 	 */
 	EditRatingGroupText: () => LocalizedString
 	/**
+	 * Editar opções de classificação
+	 */
+	EditRatingOptions: () => LocalizedString
+	/**
+	 * Passo onde pode editar as opções de classificação deste critério. Pode editar ou remover opções existentes, ou criar novas.
+	 */
+	EditRatingOptionsText: () => LocalizedString
+	/**
 	 * Erro ao tentar editar a categoria.
 	 */
 	EditedCategoryFailed: () => LocalizedString
@@ -822,6 +1008,14 @@ export type TranslationFunctions = {
 	 * Categoria editada com sucesso.
 	 */
 	EditedCategorySaved: () => LocalizedString
+	/**
+	 * Erro ao tentar editar o critério de avaliação
+	 */
+	EditedRatingGroupFailed: () => LocalizedString
+	/**
+	 * Critério de avaliação editado com sucesso.
+	 */
+	EditedRatingGroupSaved: () => LocalizedString
 	/**
 	 * Erro
 	 */
@@ -864,6 +1058,10 @@ export type TranslationFunctions = {
 		 */
 		NoRatingQuestionTitle: (arg: { language: unknown }) => LocalizedString
 		/**
+		 * Necessita de inserir um título para o inquérito.
+		 */
+		NoSurveyTitle: () => LocalizedString
+		/**
 		 * Necessita de inserir um título para a questão do tipo de texto em {language}.
 		 */
 		NoTextQuestionTitle: (arg: { language: unknown }) => LocalizedString
@@ -871,6 +1069,10 @@ export type TranslationFunctions = {
 		 * Erro ao carregar os critérios de avaliação.
 		 */
 		RatingGroups: () => LocalizedString
+		/**
+		 * Erro ao carregar os inquéritos.
+		 */
+		Surveys: () => LocalizedString
 	}
 	/**
 	 * Finalizar
@@ -904,6 +1106,10 @@ export type TranslationFunctions = {
 	 * Filtrar critérios de avaliação pelo título
 	 */
 	InputRatingGroup: () => LocalizedString
+	/**
+	 * Filtrar inquérito pelo título
+	 */
+	InputSurvey: () => LocalizedString
 	Language: {
 		/**
 		 * Português
@@ -982,6 +1188,14 @@ export type TranslationFunctions = {
 	 * Não existem critérios de avaliação para mostrar.
 	 */
 	NoRatingOptionsToShow: () => LocalizedString
+	/**
+	 * Não existem inquéritos com o filtro inserido.
+	 */
+	NoSurveysFilter: () => LocalizedString
+	/**
+	 * Não existem inquéritos para mostrar.
+	 */
+	NoSurveysToShow: () => LocalizedString
 	/**
 	 * Sem título
 	 */
@@ -1077,10 +1291,6 @@ export type TranslationFunctions = {
 	 */
 	RatingOptions: () => LocalizedString
 	/**
-	 * Passo para criação das opções de classificação associadas ao critério de avaliação.
-	 */
-	RatingOptionsText: () => LocalizedString
-	/**
 	 * Voltar
 	 */
 	Return: () => LocalizedString
@@ -1100,11 +1310,37 @@ export type TranslationFunctions = {
 	 * Estatísticas
 	 */
 	Statistics: () => LocalizedString
+	Status: {
+		/**
+		 * Ativos
+		 */
+		Active: () => LocalizedString
+		/**
+		 * Cancelados
+		 */
+		Canceled: () => LocalizedString
+		/**
+		 * Completos
+		 */
+		Completed: () => LocalizedString
+		/**
+		 * Não Iniciados
+		 */
+		NotStarted: () => LocalizedString
+	}
 	Steps: {
+		/**
+		 * Ativar
+		 */
+		Activate: () => LocalizedString
 		/**
 		 * Detalhes
 		 */
 		Details: () => LocalizedString
+		/**
+		 * Funcionários
+		 */
+		Employees: () => LocalizedString
 		/**
 		 * Opções de classificação
 		 */
@@ -1113,6 +1349,10 @@ export type TranslationFunctions = {
 		 * Questões de classificação
 		 */
 		RatingQuestions: () => LocalizedString
+		/**
+		 * Questionário
+		 */
+		Template: () => LocalizedString
 		/**
 		 * Questões de texto
 		 */
@@ -1123,9 +1363,29 @@ export type TranslationFunctions = {
 	 */
 	Submissions: () => LocalizedString
 	/**
+	 * Descrição do inquérito
+	 */
+	SurveyDescription: () => LocalizedString
+	/**
+	 * Insira uma descrição para o inquérito.
+	 */
+	SurveyDescriptionText: () => LocalizedString
+	/**
+	 * Título do inquérito
+	 */
+	SurveyTitle: () => LocalizedString
+	/**
+	 * Insira um título para identificar o inquérito.
+	 */
+	SurveyTitleText: () => LocalizedString
+	/**
 	 * Inquéritos
 	 */
 	Surveys: () => LocalizedString
+	/**
+	 * Página para criar um novo inquérito.
+	 */
+	SurveysDescription: () => LocalizedString
 	/**
 	 * Texto
 	 */
